@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Gaming Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚠️ **Disclaimer**
+All design credits go to Zentry. This project is created purely for educational purposes and is not intended for commercial use or public deployment.
 
-Currently, two official plugins are available:
+**Introduction**
+Built a visually captivating website inspired by Zentry, featuring scroll-triggered animations, geometric transitions, and engaging video storytelling. With a luxurious, modern feel, focusing on engaging UI/UX and smooth responsiveness.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Live Demo**
 
-## Expanding the ESLint configuration
+🔗 [View Project](https://ms-gaming.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚙️ Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- GSAP
+- React.js
+- Tailwind CSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🔋 Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+👉 **Scroll-Based Animations:** Dynamic animations triggered by scrolling for a more engaging user experience.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+👉 **Clip Path Shaped Animations:** Unique geometric transitions using CSS clip-paths to create visually stunning effects.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+👉 **3D Hover Effects:** Interactive 3D transformations that respond to user interactions for a modern feel.
+
+👉 **Video Transitions:** Seamlessly integrated video elements to enhance storytelling and flow.
+
+👉 **Smooth UI/UX:** Polished interfaces with buttery-smooth interactions for an intuitive user journey.
+
+👉 **Completely Responsive:** Flawless adaptation across all devices, ensuring a consistent experience.
+
+...and many more, including code architecture and reusability.
