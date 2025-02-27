@@ -114,13 +114,12 @@ const Hero = () => {
   });
 
   const getVideoSrc = (index: number): string => {
-    console.log(index);
     return `videos/hero-${index}.mp4`;
   };
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {state.isLoading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+        <div className="flex-center absolute z-[100] h-dvh w-screen  bg-violet-50">
           <div className="three-body">
             <div className="three-body__dot" />
             <div className="three-body__dot" />
@@ -132,8 +131,8 @@ const Hero = () => {
         id="video-frame"
         className="relative z-10 h-dvh w-screen overflow-x-hidden rounded-lg bg-blue-75"
       >
-        <div>
-          <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
+        <div className="overflow-x-hidden">
+          <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer rounded-lg">
             <div
               onClick={handleVideoClick}
               className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"

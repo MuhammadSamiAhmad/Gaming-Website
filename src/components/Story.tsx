@@ -4,7 +4,7 @@ import { useRef, MouseEvent } from "react";
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
 
-const Story = () => {
+const FloatingImage = () => {
   const frameRef = useRef<HTMLImageElement>(null);
 
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
@@ -46,7 +46,10 @@ const Story = () => {
   };
 
   return (
-    <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
+    <div
+      id="story"
+      className="min-h-dvh w-screen bg-black text-blue-50 overflow-x-hidden"
+    >
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
           the multiversal ip world
@@ -103,7 +106,7 @@ const Story = () => {
           </div>
         </div>
 
-        <div className="-mt-60 flex w-full justify-center md:-mt-60 md:me-44 md:justify-end">
+        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               Where realms converge, lies Zentry and the boundless pillar.
@@ -123,4 +126,4 @@ const Story = () => {
   );
 };
 
-export default Story;
+export default FloatingImage;
